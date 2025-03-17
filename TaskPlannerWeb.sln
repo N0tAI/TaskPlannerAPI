@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thayen.WebPlanner.API", "src\server\Thayen.WebPlanner.API\Thayen.WebPlanner.API.csproj", "{3F5C9EA3-78E1-4CC5-96C7-9DBD6A037315}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{4E902411-C646-440A-9D24-438337495FBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thayen.WebPlanner.Data", "src\server\Thayen.WebPlanner.Data\Thayen.WebPlanner.Data.csproj", "{BDE8D891-73B5-0A97-C92E-6701CA7CE072}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F5C9EA3-78E1-4CC5-96C7-9DBD6A037315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F5C9EA3-78E1-4CC5-96C7-9DBD6A037315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F5C9EA3-78E1-4CC5-96C7-9DBD6A037315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F5C9EA3-78E1-4CC5-96C7-9DBD6A037315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDE8D891-73B5-0A97-C92E-6701CA7CE072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE8D891-73B5-0A97-C92E-6701CA7CE072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE8D891-73B5-0A97-C92E-6701CA7CE072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE8D891-73B5-0A97-C92E-6701CA7CE072}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F5C9EA3-78E1-4CC5-96C7-9DBD6A037315} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{BDE8D891-73B5-0A97-C92E-6701CA7CE072} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FAA08BB9-96BF-4153-AEFD-E91529DFF344}
+	EndGlobalSection
+EndGlobal
