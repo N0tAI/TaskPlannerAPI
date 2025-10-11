@@ -1,4 +1,4 @@
-namespace Thayen.WebPlanner.API.Views;
+namespace Planner.Api.Views;
 
 public record TaskView : IWebView
 {

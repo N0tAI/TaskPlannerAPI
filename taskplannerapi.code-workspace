@@ -2,11 +2,19 @@
 	"folders": [
 		{
 			"path": ".",
-			"name": "Task Planner API"
+			"name": "Workspace Root"
 		},
 		{
-			"path": "src/server/Thayen.WebPlanner.Tests",
-			"name": "TaskPlannerAPI.Tests"
+			"path": "./src/Planner.Api",
+			"name": "Planner.Api"
+		},
+		{
+			"path": "./src/Planner.Data",
+			"name": "Planner.Data"
+		},
+		{
+			"path": "src/Planner.Tests",
+			"name": "Planner.Tests"
 		}
 	],
 	"settings": {

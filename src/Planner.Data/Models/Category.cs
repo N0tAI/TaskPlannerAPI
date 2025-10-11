@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Thayen.WebPlanner.Data.Models;
+﻿namespace Planner.Data.Models;
 
 public partial class Category
 {

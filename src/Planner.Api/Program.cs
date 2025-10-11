@@ -1,6 +1,4 @@
-using Thayen.WebPlanner.Data;
-
-namespace Thayen.WebPlanner.API;
+namespace Planner.Api;
 
 public class Program
 {

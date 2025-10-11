@@ -1,7 +1,7 @@
 using System.Linq.Expressions;
-using Thayen.WebPlanner.Data.Models;
+using Planner.Data.Models;
 
-namespace Thayen.WebPlanner.Data;
+namespace Planner.Data;
 
 public interface ICrudRepository<T>
 	where T : class, IModel

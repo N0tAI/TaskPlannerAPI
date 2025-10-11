@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Thayen.WebPlanner.Data;
+namespace Planner.Data;
 
 public static class ServiceCollectionExtensions
 {

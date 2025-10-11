@@ -1,6 +1,6 @@
-using Thayen.WebPlanner.Data.Models;
+using Planner.Data.Models;
 
-namespace Thayen.WebPlanner.Data;
+namespace Planner.Data;
 
 public interface IUnitOfWork
 {

@@ -1,4 +1,4 @@
-﻿namespace Thayen.WebPlanner.Tests;
+﻿namespace Planner.Tests;
 
 public class Tests
 {

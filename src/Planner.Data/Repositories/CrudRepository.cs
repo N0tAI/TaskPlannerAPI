@@ -1,9 +1,9 @@
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Thayen.WebPlanner.Data.Models;
+using Planner.Data.Models;
 
-namespace Thayen.WebPlanner.Data;
+namespace Planner.Data;
 
 public class CrudRepository<T> : Repository, ICrudRepository<T>
 	where T : class, IModel

@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
-using Thayen.WebPlanner.Data.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using Planner.Data.Models;
 
-namespace Thayen.WebPlanner.Data;
+namespace Planner.Data;
 
 public partial class PlannerContext : DbContext
 {

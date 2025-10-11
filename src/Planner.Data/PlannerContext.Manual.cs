@@ -1,31 +1,31 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Thayen.WebPlanner.Data.Models;
+using Planner.Data.Models;
 
-public partial class PlannerContext : DbContext
+partial class PlannerContext : DbContext
 {
-	public PlannerContext(DbContextOptions<PlannerContext> options)
-		: base(options)
-	{
-	}
+    public PlannerContext(DbContextOptions<PlannerContext> options)
+        : base(options)
+    {
+    }
 
-	void OnModelCreatingPartial(ModelBuilder modelBuilder)
-	{
-            base.OnModelCreating(modelBuilder);
+    void OnModelCreatingPartial(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
 
-            // Configure IdType to Guid conversion for all properties
-            foreach (var entityType in modelBuilder.Model.GetEntityTypes())
+        // Configure IdType to Guid conversion for all properties
+        foreach (var entityType in modelBuilder.Model.GetEntityTypes())
+        {
+            foreach (var property in entityType.GetProperties())
             {
-                foreach (var property in entityType.GetProperties())
+                if (property.ClrType == typeof(IdType))
                 {
-                    if (property.ClrType == typeof(IdType))
-                    {
-                        property.SetValueConverter(new ValueConverter<IdType, Guid>(
-                            id => id.Value,
-                            guid => new IdType(guid)
-                        ));
-                    }
+                    property.SetValueConverter(new ValueConverter<IdType, Guid>(
+                        id => id.Value,
+                        guid => new IdType(guid)
+                    ));
                 }
             }
-	}
+        }
+    }
 }

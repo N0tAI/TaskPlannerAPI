@@ -1,4 +1,4 @@
-namespace Thayen.WebPlanner.Data.Models;
+namespace Planner.Data.Models;
 
 public readonly struct IdType
 {

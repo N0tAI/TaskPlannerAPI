@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Thayen.WebPlanner\Thayen.WebPlanner.API.csproj" />
+    <ProjectReference Include="..\Planner.Api\Planner.Api.csproj" />
   </ItemGroup>
+
 </Project>

@@ -1,8 +1,7 @@
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Thayen.WebPlanner.Data.Models;
+using Planner.Data.Models;
 
-namespace Thayen.WebPlanner.Data;
+namespace Planner.Data;
 
 public class UnitOfWork : IUnitOfWork
 {
