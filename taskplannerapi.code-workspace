@@ -10,7 +10,8 @@
 		}
 	],
 	"settings": {
-		"dotnet.testWindow.useTestingPlatformProtocol": true
+		"dotnet.testWindow.useTestingPlatformProtocol": true,
+		"explorer.excludeGitIgnore": true
 	},
 	"extensions": {
 		"recommendations": [
