@@ -1,3 +1,5 @@
+using Planner.Data;
+
 namespace Planner.Api;
 
 public class Program
