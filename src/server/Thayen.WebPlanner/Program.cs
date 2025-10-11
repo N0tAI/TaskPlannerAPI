@@ -8,7 +8,7 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        builder.Services.AddDataServices(builder.Configuration.GetConnectionString("Database")!);
+        builder.Services.AddDataServices(builder.Configuration.GetConnectionString("Postgres")!);
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
