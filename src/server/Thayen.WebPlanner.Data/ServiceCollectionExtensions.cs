@@ -9,6 +9,7 @@ public static class ServiceCollectionExtensions
     {
         return collection.AddDbContextPool<PlannerDatabaseContext>(options =>
             options.UseNpgsql(connectionString)
-                   .UseSnakeCaseNamingConvention());
+                   .UseSnakeCaseNamingConvention())
+               .AddScoped<IUnitOfWork, UnitOfWork>();
     }
 }

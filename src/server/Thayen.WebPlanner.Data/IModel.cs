@@ -1,7 +1,7 @@
-﻿namespace Thayen.WebPlanner.Data
+﻿namespace Thayen.WebPlanner.Data.Models
 {
     public interface IModel
     {
-        long? Id { get; set; }
+        IdType? Id { get; set; }
     }
 }

@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "Task Planner API"
+		},
+		{
+			"path": "src/server/Thayen.WebPlanner.Tests",
+			"name": "TaskPlannerAPI.Tests"
+		}
+	],
+	"settings": {
+		"dotnet.testWindow.useTestingPlatformProtocol": true
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-dotnettools.csharp",
+			"ms-dotnettools.csdevkit",
+			"ms-dotnettools.vscodeintellicode-csharp"
+		]
+	}
+}
