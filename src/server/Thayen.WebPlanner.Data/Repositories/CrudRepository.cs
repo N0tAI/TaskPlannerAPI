@@ -9,7 +9,7 @@ public class CrudRepository<T> : Repository, ICrudRepository<T>
 	where T : class, IModel
 {
 	protected readonly DbSet<T> _dbSet;
-	public CrudRepository(PlannerDatabaseContext ctx, ILoggerFactory logger) : base(ctx, logger)
+	public CrudRepository(PlannerContext ctx, ILoggerFactory logger) : base(ctx, logger)
 	{
 		_dbSet = ctx.Set<T>();
 	}

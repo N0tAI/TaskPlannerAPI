@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Thayen.WebPlanner.Data.Models;
 
@@ -5,11 +6,11 @@ namespace Thayen.WebPlanner.Data;
 
 public class UnitOfWork : IUnitOfWork
 {
-    private readonly PlannerDatabaseContext _context;
+    private readonly PlannerContext _context;
     private readonly ILoggerFactory _loggerFactory;
     private readonly Dictionary<Type, object> _repositories = new();
 
-    public UnitOfWork(PlannerDatabaseContext context, ILoggerFactory loggerFactory)
+    public UnitOfWork(PlannerContext context, ILoggerFactory loggerFactory)
     {
         _context = context;
         _loggerFactory = loggerFactory;

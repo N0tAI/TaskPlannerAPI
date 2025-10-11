@@ -1,18 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Thayen.WebPlanner.Data.Models;
 
-namespace Thayen.WebPlanner.Data
+public partial class PlannerContext : DbContext
 {
-    public class PlannerDatabaseContext : DbContext
+	public PlannerContext(DbContextOptions<PlannerContext> options)
+		: base(options)
 	{
-        public PlannerDatabaseContext(DbContextOptions<PlannerDatabaseContext> options) : base(options)
-        {
+	}
 
-        }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
+	void OnModelCreatingPartial(ModelBuilder modelBuilder)
+	{
             base.OnModelCreating(modelBuilder);
 
             // Configure IdType to Guid conversion for all properties
@@ -29,6 +27,5 @@ namespace Thayen.WebPlanner.Data
                     }
                 }
             }
-        }
-    }
+	}
 }

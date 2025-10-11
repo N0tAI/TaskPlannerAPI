@@ -2,10 +2,10 @@
 
 namespace Thayen.WebPlanner.Data
 {
-    public abstract class Repository(PlannerDatabaseContext ctx, ILoggerFactory logger)
+    public abstract class Repository(PlannerContext ctx, ILoggerFactory logger)
     {
         protected readonly ILoggerFactory _logFactory = logger;
-        protected readonly PlannerDatabaseContext _context = ctx;
-        
+        protected readonly PlannerContext _context = ctx;
+
     }
 }
