@@ -7,6 +7,7 @@ CREATE TABLE planner.tasks (
     priority INT NOT NULL DEFAULT 0,
     completion_date TIMESTAMPTZ DEFAULT NULL,
     parent_task_id UUID DEFAULT NULL REFERENCES planner.tasks (task_id),
+    PRIMARY KEY (task_id)
 );
 
 DROP TABLE IF EXISTS planner.categories;
