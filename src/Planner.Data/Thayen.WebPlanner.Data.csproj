@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <LangVersion>13</LangVersion>
+    <UserSecretsId>62e500c1-8b62-4faf-a9cd-af69f5771a19</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
