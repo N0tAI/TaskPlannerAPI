@@ -1,7 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Thayen.WebPlanner.API;
+namespace Planner.Api;
 
 public class ApiResponseSerializer : JsonConverterFactory
 {

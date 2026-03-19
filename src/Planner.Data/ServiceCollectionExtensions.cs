@@ -1,14 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Thayen.WebPlanner.Data;
+namespace Planner.Data;
 
 public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddDataServices(this IServiceCollection collection, string connectionString)
     {
-        return collection.AddDbContextPool<PlannerDatabaseContext>(options =>
+        return collection.AddDbContextPool<PlannerContext>(options =>
             options.UseNpgsql(connectionString)
-                   .UseSnakeCaseNamingConvention());
+                   .UseSnakeCaseNamingConvention())
+               .AddScoped<IUnitOfWork, UnitOfWork>();
+
     }
 }

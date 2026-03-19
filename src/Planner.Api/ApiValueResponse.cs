@@ -1,4 +1,4 @@
-namespace Thayen.WebPlanner.API;
+namespace Planner.Api;
 
 public record class ApiValueResponse<TValue> : ApiResponse
 {

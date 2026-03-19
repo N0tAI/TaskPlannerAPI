@@ -1,4 +1,4 @@
-namespace Thayen.WebPlanner.API.Model;
+namespace Planner.Api.Views;
 
 public interface IWebView
 {
